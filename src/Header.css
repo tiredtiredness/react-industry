@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav__logo {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav__menu {
+  display: flex;
+}
+
+.nav__menu--mobile {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+}
+
+.nav__list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+  transition: color 0.2s ease-in-out;
+}
+
+.nav__link:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.link-active {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.active {
+  color: black;
+}
+
+.nav__mobile {
+  display: none;
+  position: absolute;
+  right: 13px;
+  top: 8px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-image: url('./images/buttons/hamburger-svgrepo-com.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    gap: 0;
+  }
+  .nav__list {
+    flex-direction: column;
+    display: none;
+  }
+  .nav__mobile {
+    display: block;
+    z-index: 100;
+  }
+  .nav__menu--mobile {
+    display: block;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 50%;
+    height: 100%;
+    transition: right 1s ease-in-out;
+  }
+  .nav__menu--mobile .nav__list {
+    display: flex;
+    position: absolute;
+    right: calc(50% - 134px / 2);
+    top: calc(50% - (215px / 2));
+  }
+}
+
+@media (max-width: 550px) {
+  .nav {
+    gap: 0;
+  }
+  .nav__list {
+    flex-direction: column;
+    display: none;
+  }
+}

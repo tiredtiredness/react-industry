@@ -1,0 +1,52 @@
+.industry-4 {
+  position: relative;
+}
+
+.industry-4__desc {
+  margin-bottom: 20px;
+}
+
+.industry-4__human-hand {
+  position: absolute;
+  width: 150px;
+  top: 0;
+  right: 0;
+}
+
+.industry-4__robot-hand {
+  position: absolute;
+  width: 150px;
+  bottom: 0;
+  left: 0;
+}
+
+.industry-4__wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.industry-4__video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .industry-4__human-hand {
+    width: 100px;
+  }
+
+  .industry-4__robot-hand {
+    width: 100px;
+  }
+  .industry-4__wrapper {
+    width: 80%;
+    padding-bottom: 45%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+

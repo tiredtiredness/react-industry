@@ -1,0 +1,52 @@
+.examples__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.example {
+  width: fit-content;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.example:nth-child(2n) {
+  flex-flow: row-reverse;
+}
+.example__title {
+  width: 300px;
+  font-weight: 400;
+}
+
+.example:nth-child(2n) .example__title {
+  text-align: start;
+}
+.example:nth-child(2n + 1) .example__title {
+  text-align: end;
+}
+
+.example__img {
+  max-width: 500px;
+}
+
+@media (max-width: 1200px) {
+  .example__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .example {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .example:nth-child(n) .example__title {
+    text-align: center;
+  }
+  .example:nth-child(2n) {
+    flex-flow: column;
+  }
+  .example__img {
+    width: 100%;
+  }
+}

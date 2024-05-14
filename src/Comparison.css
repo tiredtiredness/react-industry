@@ -1,0 +1,26 @@
+.comparison__wrapper {
+  display: flex;
+  gap: 20px;
+}
+.comparison__column {
+  width: 50%;
+  padding: 0 20px;
+}
+.column__list {
+  list-style: circle;
+}
+.column__title {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+  .comparison__wrapper {
+    flex-direction: column;
+  }
+  .comparison__column {
+    width: 100%;
+  }
+  .column__title {
+    text-align: center;
+  }
+}

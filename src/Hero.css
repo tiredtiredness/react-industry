@@ -1,0 +1,63 @@
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.hero__container {
+  padding: 9rem 7rem;
+  max-width: 1400px;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+}
+
+.hero__desc {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.hero__controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-slider {
+  position: absolute;
+  top: calc(50% - 75px);
+  background-color: transparent;
+  background-size: cover;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  border: none;
+}
+
+.btn-slider--left {
+  left: -15px;
+  background-image: url('./images/buttons/system-arrow-left-line-svgrepo-com.svg');
+}
+
+.btn-slider--right {
+  right: -15px;
+  background-image: url('./images/buttons/system-arrow-right-line-svgrepo-com.svg');
+}
+
+@media (max-width: 550px) {
+  .btn-slider {
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+  }
+
+  .btn-slider--left {
+    left: 0;
+  }
+  .btn-slider--right {
+    right: 0;
+  }
+}
