@@ -1,8 +1,9 @@
-# React + Vite
+# Веб-сайт «Индустрии производства 3.0 и 4.0»
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Для реализации практико-ориентированного проекта использованы HTML, CSS, Javascript, фреймворк React, инструмент сборки Vite.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Реализовано:
+- hero-секция со слайдером
+- форма с модальными окнами
+- для адаптивности использованы 3 контрольные точки: 1200, 800 и 550 пикселей. 
+- бургер-меню 
